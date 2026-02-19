@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="tanmay_owl_js.PartnerLoader">
+        <div class="p-4">
+            <h1>Partner Loader</h1>
+
+            <button t-on-click="loadPartners" class="btn btn-primary">
+                Load Partners
+            </button>
+
+            <t t-if="state.loading">
+                <p>Loading...</p>
+            </t>
+            <t t-if="state.partners">
+            <table border="1">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+                <t t-foreach="state.partners" t-as="partner" t-key="partner.id">
+                <tr>
+                    <td>
+                        <t t-esc="partner.name"/>
+                    </td>
+                    <td>
+                        <t t-esc="partner.email"/>
+                    </td>
+                    </tr>
+                </t>
+            </table>
+            </t>
+
+            <!-- <ul>
+                <t t-foreach="state.partners" t-as="partner" t-key="partner.id">
+                    <li>
+                        <t t-esc="partner.name"/>
+                        <t t-esc="partner.email"/>
+                    </li>
+                </t>
+            </ul> -->
+        </div>
+    </t>
+
+</templates>
