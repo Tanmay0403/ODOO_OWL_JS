@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="action_hello_owl" model="ir.actions.client">
+        <field name="name">Learning JS</field>
+        <field name="tag">tanmay_owl_js.hello_action</field>
+    </record>
+
+    <menuitem id="menu_hello_owl" name="Learning JS" action="action_hello_owl" sequence="10"/>
+
+</odoo>

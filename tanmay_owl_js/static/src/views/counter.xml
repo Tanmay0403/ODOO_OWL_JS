@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <!-- <t t-name="tanmay_owl_js.HelloWorld">
+        <div class="p-4">
+            <h1>Hello Tanmay </h1>
+            <h3>OWL is Working </h3>
+        </div>
+    </t> -->
+
+    <t t-name="tanmay_owl_js.Counter">
+        <div style="margin-left: 10px;">
+            <!-- <h2 t-att-class="getColors" id="custom_heading">Count: <t t-esc="state.count"/> -->
+            <h2 t-att-class="getColors" id="custom_heading">Count: <t t-esc="props.value"/>
+            </h2>
+            <div class="d-flex gap-2">
+            <button t-on-click="increment" class="btn btn-primary">Increase</button>
+            <button t-on-click="decrement" class="btn btn-primary">Decrease</button>
+            <button t-on-click="reset">Reset</button>
+            </div>
+        </div>
+    </t>
+
+</templates>

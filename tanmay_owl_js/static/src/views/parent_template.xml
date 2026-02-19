@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="tanmay_owl_js.Parent">
+        <div>
+            <!-- <Counter start="0"/> -->
+            <h1>Parent Component</h1>
+
+            <!-- <Counter start="5"/>
+            <Counter start="100"/> -->
+           <t t-foreach="state.counters" t-as="value" t-key="value_index">
+                <Counter value="value" index="value_index" onIncrement="increment" onDecrement="decrement" onReset="reset"/>
+            </t>
+            <div class="mt-2" style="margin-left: 10px">
+           <button t-on-click="resetAll" class="btn btn-primary">RESET ALL</button>
+           </div>
+        </div>
+    </t>
+
+</templates>
