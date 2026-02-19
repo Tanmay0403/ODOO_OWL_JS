@@ -13,6 +13,8 @@
             "tanmay_owl_js/static/src/views/counter.xml",
             "tanmay_owl_js/static/src/views/parent_js.js",
             "tanmay_owl_js/static/src/views/parent_template.xml",
+            "tanmay_owl_js/static/src/views/partner_loader.js",
+            "tanmay_owl_js/static/src/views/partner_loader.xml",
         ]
     },
     "data": [

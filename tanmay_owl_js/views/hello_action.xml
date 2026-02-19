@@ -5,7 +5,12 @@
         <field name="name">Learning JS</field>
         <field name="tag">tanmay_owl_js.hello_action</field>
     </record>
+    <record id="action_partner_loader" model="ir.actions.client">
+        <field name="name">Load Partners</field>
+        <field name="tag">tanmay_owl_js.partner_loader_action</field>
+    </record>
 
     <menuitem id="menu_hello_owl" name="Learning JS" action="action_hello_owl" sequence="10"/>
+    <menuitem id="menu_partner_load" name="Load Partners" action="action_partner_loader" sequence="10" parent="menu_hello_owl"/>
 
 </odoo>
